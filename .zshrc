@@ -1,7 +1,7 @@
 
 alias v='vim'
 
-alias ll='ls -FGlAhp'
+alias ll='ls -AlFG'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
 alias ..='cd ..'
