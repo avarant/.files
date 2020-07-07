@@ -14,3 +14,4 @@ alias f='open -a Finder .'
 alias c='clear'
 alias d='du -hc'
 
+alias record='arecord -f S16_LE -r 16000 -D default -c 1 audio/test.wav'
