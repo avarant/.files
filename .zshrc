@@ -25,7 +25,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -118,7 +118,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias v='vim'
 
 alias copy='xclip -selection c'
-alias record='arecord -f S16_LE -r 16000 -D default -c 1 audio/test.wav'
+# alias record='arecord -f S16_LE -r 16000 -D default -c 1 audio/test.wav'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
