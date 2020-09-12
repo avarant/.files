@@ -3,7 +3,6 @@
 vim and zsh configurations
 
 <br>
-<br>
 
 **install zsh**
 
