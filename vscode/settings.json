@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 0,
+    "vim.useCtrlKeys": false,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "workbench.colorTheme": "One Dark Pro"
+}
