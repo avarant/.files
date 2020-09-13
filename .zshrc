@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/varant/.oh-my-zsh"
+export ZSH="/Users/varant/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,10 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# my aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ~='cd ~'
@@ -107,18 +106,25 @@ alias ~='cd ~'
 alias ll='ls -AlFG'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
-alias c='clear'
+alias v='vim'
+
 alias d='du -hc'
-alias p='ps aux'
-alias s='source'
 alias t='tar zxvf'
+
+# alias f='xdg-open'
+alias f='open'
+
+# alias c='xclip -selection c'
+alias c='pbcopy'
+
+alias p='ps aux'
 
 alias path='echo -e ${PATH//:/\\n}'
 
-alias v='vim'
-
-alias copy='xclip -selection c'
-# alias record='arecord -f S16_LE -r 16000 -D default -c 1 audio/test.wav'
+listn() { ls -U "$1" | head -"$2" }
+count() { ls -1q "$1" | wc -l }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/.gem/ruby/2.6.3p62/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
