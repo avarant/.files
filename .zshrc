@@ -99,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+###################
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ~='cd ~'
@@ -107,24 +109,22 @@ alias ll='ls -AlFG'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
 alias v='vim'
-
 alias d='du -hc'
 alias t='tar zxvf'
+alias p='ps aux'
 
 # alias f='xdg-open'
 alias f='open'
 
-# alias c='xclip -selection c'
-alias c='pbcopy'
-
-alias p='ps aux'
-
 alias path='echo -e ${PATH//:/\\n}'
 
+# alias copy='xclip -selection c'
+
+copy() { cat "$1" | pbcopy }
 listn() { ls -U "$1" | head -"$2" }
 count() { ls -1q "$1" | wc -l }
 
+###################
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="$HOME/.gem/ruby/2.6.3p62/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
