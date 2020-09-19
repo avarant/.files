@@ -118,9 +118,10 @@ alias f='open'
 
 alias path='echo -e ${PATH//:/\\n}'
 
-# alias copy='xclip -selection c'
+alias copy='xclip -selection clipboard <'
+alias paste='xclip -o -selection clipboard'
+# copy() { cat "$1" | pbcopy }
 
-copy() { cat "$1" | pbcopy }
 listn() { ls -U "$1" | head -"$2" }
 count() { ls -1q "$1" | wc -l }
 
