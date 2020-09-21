@@ -4,6 +4,7 @@ tools i use
 
 
 ### install [iTerm2](https://www.iterm2.com/)
+available on macos only
 ```bash
 brew cask install iterm2
 ```
