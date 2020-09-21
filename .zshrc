@@ -109,9 +109,11 @@ alias ll='ls -AlFG'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
 alias v='vim'
+
 alias d='du -hc'
+# alias p='ps aux'
+
 alias t='tar zxvf'
-alias p='ps aux'
 
 # alias f='xdg-open'
 alias f='open'
@@ -120,7 +122,8 @@ alias path='echo -e ${PATH//:/\\n}'
 
 alias copy='xclip -selection clipboard <'
 alias paste='xclip -o -selection clipboard'
-# copy() { cat "$1" | pbcopy }
+# alias c='pbcopy <'
+# alias p='pbpaste'
 
 listn() { ls -U "$1" | head -"$2" }
 count() { ls -1q "$1" | wc -l }
