@@ -10,6 +10,11 @@ brew cask install iterm2
 
 
 ### install [tmux](https://github.com/tmux/tmux/wiki)
+on ubuntu or debian
+```bash
+sudo apt install tmux
+```
+on macos
 ```bash
 brew install tmux
 ```
