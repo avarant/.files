@@ -3,10 +3,9 @@
 tools i use
 
 
-### install [iTerm2](https://www.iterm2.com/)
-only available on macos
+### install zsh
 ```bash
-brew cask install iterm2
+sudo apt install zsh
 ```
 
 
@@ -18,12 +17,6 @@ sudo apt install tmux
 on macos
 ```bash
 brew install tmux
-```
-
-
-### install zsh
-```bash
-sudo apt install zsh
 ```
 
 
@@ -48,5 +41,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ### restart zsh
 ```bash
-source .zshrc
+source ~/.zshrc
 ```
