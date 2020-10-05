@@ -9,4 +9,5 @@ email = varantarabian@gmail.com
 	st = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
-  hash = rev-parse --short HEAD
+    hash = rev-parse --short HEAD
+    list = log --reflog
