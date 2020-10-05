@@ -1,10 +1,7 @@
 {
     "window.zoomLevel": 0,
-    "vim.useCtrlKeys": false,
     "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "workbench.colorTheme": "One Dark Pro"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "editor.fontSize": 13,
+    "vim.useCtrlKeys": false"
 }

@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-###################
+#######################
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -109,26 +109,37 @@ alias ll='ls -AlFG'
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
 alias v='vim'
-
 alias d='du -hc'
-# alias p='ps aux'
-
 alias t='tar zxvf'
 
-# alias f='xdg-open'
 alias f='open'
+# alias f='xdg-open'
+
+alias cl='clear'
+
+alias c='xclip -selection clipboard <'
+alias p='xclip -o -selection clipboard >'
 
 alias path='echo -e ${PATH//:/\\n}'
-
-alias copy='xclip -selection clipboard <'
-alias paste='xclip -o -selection clipboard'
-# alias c='pbcopy <'
-# alias p='pbpaste'
 
 listn() { ls -U "$1" | head -"$2" }
 count() { ls -1q "$1" | wc -l }
 
-###################
+alias py='/usr/local/bin/python3'
+alias chrome='open /Applications/Google\ Chrome.app'
+
+alias snek='python3 ~/scripts/snek.py'
+alias dbz='python3 ~/scripts/dbz.py'
+
+
+########################
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH="$HOME/.gem/ruby/2.6.3p62/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

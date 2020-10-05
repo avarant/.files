@@ -1,6 +1,6 @@
-set number
+:set number
 syntax on
-set tabstop=2 shiftwidth=2 expandtab
+set tabstop=4 shiftwidth=4 expandtab
 set autoindent
 set hlsearch
 set mouse=a
