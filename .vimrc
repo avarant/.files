@@ -5,3 +5,4 @@ set autoindent
 set hlsearch
 set mouse=a
 :imap jj <Esc>
+colorscheme onedark
