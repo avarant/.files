@@ -137,10 +137,6 @@ count() { ls -1q "$1" | wc -l }
 alias py='/usr/local/bin/python3'
 alias chrome='open /Applications/Google\ Chrome.app'
 
-alias snek='python3 ~/scripts/snek.py'
-alias dbz='python3 ~/scripts/dbz.py'
-
-
 ########################
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
