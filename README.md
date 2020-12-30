@@ -43,3 +43,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```bash
 source ~/.zshrc
 ```
+
+
+### [onedark.vim](https://github.com/joshdick/onedark.vim)
