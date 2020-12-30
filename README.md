@@ -45,4 +45,4 @@ source ~/.zshrc
 ```
 
 
-### [onedark.vim](https://github.com/joshdick/onedark.vim)
+### get [onedark.vim](https://github.com/joshdick/onedark.vim) vim color scheme
