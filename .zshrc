@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias ~='cd ~'
 
 alias ll='ls -AlFG'
@@ -119,15 +120,14 @@ alias v='vim'
 alias d='du -hc'
 alias t='tar zxvf'
 
-alias f='open'
-# alias f='xdg-open'
+# alias open='xdg-open'
 
 alias cl='clear'
 
-# alias c='xclip -selection c <'
-# alias p='xclip -selection c -o >'
-alias c='pbcopy <'
-alias p='pbpaste >'
+# alias copy='xclip -selection c <'
+# alias paste='xclip -selection c -o >'
+alias copy='pbcopy <'
+alias paste='pbpaste >'
 
 alias path='echo -e ${PATH//:/\\n}'
 
@@ -135,7 +135,14 @@ listn() { ls -U "$1" | head -"$2" }
 count() { ls -1q "$1" | wc -l }
 
 alias py='/usr/local/bin/python3'
+
 alias chrome='open /Applications/Google\ Chrome.app'
+
+### scripts
+alias google='zsh ~/scripts/google.sh'
+alias snek='python3 ~/scripts/snek.py'
+alias dbz='python3 ~/scripts/dbz.py'
+alias glidergun='python3 ~/Desktop/game-of-life/life.py'
 
 ########################
 
@@ -148,3 +155,8 @@ export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+#export PATH="/Users/varant/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"

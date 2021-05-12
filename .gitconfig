@@ -11,3 +11,10 @@ email = varantarabian@gmail.com
 	last = log -1 HEAD
     hash = rev-parse --short HEAD
     list = log --reflog
+    undo = reset HEAD~
+    update-fork = pull upstream master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

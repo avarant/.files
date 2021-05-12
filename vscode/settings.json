@@ -3,5 +3,25 @@
     "editor.tabSize": 2,
     "python.pythonPath": "/usr/local/bin/python3",
     "editor.fontSize": 13,
-    "vim.useCtrlKeys": false"
+    "vim.useCtrlKeys": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "editor.formatOnSave": true
 }
